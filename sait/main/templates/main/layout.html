@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <aside>
+        <div class="features">
+            <div class="a2">
+            <img src="static/main/img/сад.jpg" alt="">
+            </div>
+          <div class="a1">
+           <span><a href="/">Частный детский сад ИП Олеся Вадимовна Мустафина</a></span>
+            <p>Нижневартовск </p>
+          </div>
+      </div>
+        <ul>
+              <a href="/about"><li>Наш детский сад</li></a>
+              <a href="/svedenia"><li>Сведения об образовательной организации</li></a>
+              <a href="/grup"><li>Группы</li></a>
+              <a href="/sotrydniki"><li>Педагогам и сотрудникам</li></a>
+              <a href="/vakansii"><li>Вакансии</li></a>
+              <a href="/kontakti"><li>Контакты</li></a>
+              <a href="/navigator"><li>Навигатор по сайту</li></a>
+              <a href="/obrawenie"><li>Обращение граждан</li></a>
+              <a href="/bezopasnost"><li>Безопасность</li></a>
+        </ul>
+    </aside>
+{% block content %}
+{% endblock %}
+</body>
+</html>

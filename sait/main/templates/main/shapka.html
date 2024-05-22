@@ -1,0 +1,38 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="shapka">
+    <div class="a3">
+    <span>Частный детский сад ИП Олеся Вадимовна Мустафина</span>
+    <p>Частный детский сад г.Нижневартовск</p>
+        <div class="a5">
+            <div>
+            <span>Режим работы</span>
+            <p>пн-пт: 07:00-19:00</p>
+            <p>сб-вс: выходной</p>
+            <p>праздничные дни - выходные</p>
+            </div>
+            <div class="a7">
+                <span>Телефон</span>
+                <p><a href="">8-912-935-64-21</a></p>
+            </div>
+            <div class="a8">
+                <span>Адрес</span>
+                <p>628605, Российская Федерация, Ханты-Мансийский автономный округ – Югра, г. Нижневартовск, ул. Советская, д. 25Б</p>
+            </div>
+            <div class="knopka">
+                <button type="button" onclick="location.href='https://www.gosuslugi.ru/10909'">Записать ребенка в сад</button>
+            </div>
+            <div class="knopka2">
+                <button type="button" onclick="location.href='/obrawenie'">Обратиться к заведующему</button>
+            </div>
+        </div>
+    </div>
+    <div class="a4">
+    <img src="static/main/img/сад2.jpg" alt="">
+    </div>
+</div>
+{% endblock %}
+

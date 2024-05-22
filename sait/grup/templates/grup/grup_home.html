@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Группы{% endblock %}
+
+{% block content %}
+    <h1>Группы детского сада</h1>
+
+    <div style="display: flex; flex-wrap: wrap;">
+        {% for el in grup %}
+            <div class="alert alert-warning" style="margin-right: 10px; flex: 0 0 calc(33.33% - 10px);">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.teacher }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
